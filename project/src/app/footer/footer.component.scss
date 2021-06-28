@@ -1,8 +1,18 @@
+@import '../../assets/styles/breakpoints.scss';
+
 .footer {
 	display: flex;
 	flex-direction: column;
 	background-color: #f1f2f6;
 	padding: 47px 20px 31px;
+
+	@media($large) {
+		padding: 77px 0 35px;
+
+		.container {
+			flex-direction: row;
+		}
+	}
 }
 
 .section-title,
@@ -25,10 +35,18 @@
 
 .pages {
 	margin-bottom: 48px;
+
+	@media($large) {
+		margin-right: 163px;
+	}
 }
 
 .external-pages {
 	margin-bottom: 32px;
+
+	@media($large) {
+		margin-right: 196px;
+	}
 
 	.links-wrapper {
 		flex-direction: column;
@@ -60,6 +78,10 @@
 .subscribe {
 	width: 341px;
 
+	@media($large) {
+		width: 373px;
+	}
+
 	.text {
 		color: #010101;
 		font-size: 15px;
@@ -79,6 +101,10 @@
 			color: #010101;
 			font-size: 15px;
 			border-radius: 10px 0 0 10px;
+
+			@media($large) {
+				width: 256px;
+			}
 		}
 
 		.btn-email {
@@ -89,6 +115,10 @@
 			border-radius: 0 10px 10px 0;
 			height: 100%;
 			width: 117px;
+
+			@media($large) {
+				width: 117px;
+			}
 		}
 	}
 

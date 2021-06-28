@@ -1,5 +1,4 @@
-section {
-}
+@import '../../assets/styles/breakpoints.scss';
 
 .first {
 	height: 673px;
@@ -14,6 +13,10 @@ section {
 		margin: 0 auto;
 		padding-top: 236px;
 		padding-bottom: 63px;
+
+		@media($large) {
+			width: 1170px;
+		}
 
 		.title {
 			display: flex;

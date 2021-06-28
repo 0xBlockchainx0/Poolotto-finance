@@ -1,10 +1,15 @@
+@import '../../assets/styles/breakpoints.scss';
+
 .header {
 	height: 80px;
 	background-color: #fff;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 	padding: 0 20px;
+
+	.container {
+		justify-content: space-between;
+		flex-direction: row;
+			align-items: center;
+	}
 
 	.logo-wrapper {
 		.title {
@@ -14,6 +19,11 @@
 			font-weight: bold;
 			letter-spacing: 0;
 			line-height: 23px;
+
+			@media($large) {
+				font-size: 32px;
+				width: unset;
+			}
 		}
 	}
 
@@ -27,8 +37,12 @@
 		background: linear-gradient(270deg, #183197 0%, #00aeff 100%);
 
 		color: #fff;
-		font-family: Roboto;
 		font-size: 18px;
 		font-weight: bold;
+
+		@media($large) {
+			height: 50px;
+			width: 204px;
+		}
 	}
 }
