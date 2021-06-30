@@ -29,9 +29,13 @@ jobs:
           npm ci
           npm run build
       - name: Deploy
-        uses: lbertenasco/s3-deploy@v1.2.4
+        uses: reggionick/s3-deploy@v3
         with:
           folder: project/dist/project
           bucket: ${{ secrets.S3_BUCKET }}
+          bucket-region: eu-west-1
           dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
-          invalidation: / *
+          invalidation: /
+          delete-removed: true
+          no-cache: true
+          private: true
