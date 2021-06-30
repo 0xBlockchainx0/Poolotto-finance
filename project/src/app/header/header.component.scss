@@ -1,0 +1,53 @@
+@import '../../assets/styles/breakpoints.scss';
+
+.header {
+	height: 80px;
+	background-color: #fff;
+	padding: 0 20px;
+
+	@media($large) {
+		padding: 18px 20px;
+	}
+
+	.container {
+		justify-content: space-between;
+		flex-direction: row;
+			align-items: center;
+	}
+
+	.logo-wrapper {
+
+		.logo {
+			height: 58px;
+			width: 167px;
+			background: url('/assets/images/logo-mobile.png') no-repeat;
+
+			@media($large) {
+				height: 64px;
+				width: 327px;
+				background: url('/assets/images/logo-desktop.png') no-repeat;
+			}
+		}
+	}
+
+	.connect-wallet {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 64px;
+		width: 102px;
+		background-color: #162983;
+		background: linear-gradient(270deg, #183197 0%, #00aeff 100%);
+
+		color: #fff;
+		font-size: 18px;
+		font-weight: bold;
+		border-radius: 25px;
+
+		@media($large) {
+			height: 50px;
+			width: 204px;
+			border-radius: 40px;
+		}
+	}
+}
