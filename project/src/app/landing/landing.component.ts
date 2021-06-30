@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PancakeSwapService } from '../shared/pancakeswap.service';
 
 @Component({
 	selector: 'app-landing',
@@ -6,4 +7,11 @@ import { Component } from '@angular/core';
 	styleUrls: ['landing.component.scss']
 })
 
-export class LandingComponent {}
+export class LandingComponent implements OnInit {
+
+	constructor(private pancakeServie: PancakeSwapService) {}
+
+	ngOnInit(): void {
+		this.pancakeServie.getData();
+	}
+}
