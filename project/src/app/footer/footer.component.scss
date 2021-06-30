@@ -6,12 +6,16 @@
 	background-color: #f1f2f6;
 	padding: 47px 20px 31px;
 
-	@media ($large) {
-		padding: 77px 0 35px;
+	@media ($tablets) {
+		padding: 55px 0 52px;
 
 		.container {
 			flex-direction: row;
 		}
+	}
+
+	@media ($large) {
+		padding: 77px 0 35px;
 	}
 }
 
@@ -36,6 +40,11 @@
 .pages {
 	margin-bottom: 48px;
 
+	@media ($tablets) {
+		margin-right: 48px;
+		margin-bottom: unset;
+	}
+
 	@media ($large) {
 		margin-right: 163px;
 		margin-bottom: 47px;
@@ -44,6 +53,11 @@
 
 .external-pages {
 	margin-bottom: 32px;
+
+	@media ($tablets) {
+		margin-right: 85px;
+		margin-bottom: unset;
+	}
 
 	@media ($large) {
 		margin-right: 196px;
@@ -74,11 +88,19 @@
 
 	.left {
 		margin-right: 82px;
+
+		@media ($tablets) {
+			margin-right: 48px;
+		}
 	}
 }
 
 .subscribe {
 	width: 341px;
+
+	@media ($tablets) {
+		width: 230px;
+	}
 
 	@media ($large) {
 		width: 373px;
@@ -88,6 +110,10 @@
 		color: #010101;
 		font-size: 15px;
 		margin-bottom: 23px;
+
+		@media ($tablets) {
+			margin-bottom: 25px;
+		}
 	}
 
 	.input-wrapper {
@@ -104,6 +130,10 @@
 			font-size: 15px;
 			border-radius: 10px 0 0 10px;
 
+			@media ($tablets) {
+				width: 156px;
+			}
+
 			@media ($large) {
 				width: 256px;
 			}
@@ -118,8 +148,15 @@
 			height: 100%;
 			width: 117px;
 
+			@media ($tablets) {
+				width: 74px;
+				word-wrap: break-word;
+				padding: 10px;
+			}
+
 			@media ($large) {
 				width: 117px;
+				padding: unset;
 			}
 		}
 	}
@@ -131,10 +168,14 @@
 	display: flex;
 	flex-direction: column;
 
-	@media ($large) {
-		width: 1170px;
+	@media ($tablets) {
+		width: 728px;
 		flex-direction: row;
 		justify-content: space-between;
+	}
+
+	@media ($large) {
+		width: 1170px;
 	}
 
 	.email-link {
@@ -145,7 +186,7 @@
 		font-weight: bold;
 		margin-bottom: 35px;
 
-		@media ($large) {
+		@media ($tablets) {
 			margin-bottom: unset;
 		}
 
