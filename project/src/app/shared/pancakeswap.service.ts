@@ -6,7 +6,7 @@ export class PancakeSwapService {
 
 	constructor(private http: HttpClient) { }
 	getData(): any {
-		// return this.http.get('https://api.pancakeswap.info/api/v2/tokens/0x4786eeef4c750158a73218459bfc07a75c89edc0')
+		// return this.http.get('https://api.pancakeswap.info/api/v2/tokens/0x631c2f0edabac799f07550aee4ff0bf7fd35212b')
 		// 	.subscribe((data: any) => { });
 	}
 }
