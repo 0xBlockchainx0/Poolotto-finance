@@ -4,6 +4,11 @@
 			<div class="logo"></div>
 		</div>
 
-		<button class="btn connect-wallet">Connect Wallet</button>
+		<button
+			class="btn connect-wallet"
+			(click)="launchMateMask()"
+			[class.disabled]="disable">
+			Connect Wallet
+		</button>
 	</div>
 </header>

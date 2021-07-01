@@ -147,6 +147,7 @@
 			border-radius: 0 10px 10px 0;
 			height: 100%;
 			width: 117px;
+			transition: background-color 0.2s ease-in-out;
 
 			@media ($tablets) {
 				width: 74px;
@@ -157,6 +158,12 @@
 			@media ($large) {
 				width: 117px;
 				padding: unset;
+			}
+
+			&:hover {
+				background-color: #2E42A3;
+				transition: background-color 0.2s ease-in-out;
+				border: 1px solid #000000;
 			}
 		}
 	}
@@ -185,9 +192,16 @@
 		font-size: 15px;
 		font-weight: bold;
 		margin-bottom: 35px;
+		text-decoration: none;
+		transition: color 0.2s ease-in-out;
 
 		@media ($tablets) {
 			margin-bottom: unset;
+		}
+
+		&:hover {
+			color: #2E42A3;
+			transition: color 0.2s ease-in-out;
 		}
 
 		&::before {
@@ -232,5 +246,13 @@
 		margin: 0 auto;
 		color: #f1f2f6;
 		font-size: 14px;
+	}
+}
+
+.links-wrapper {
+	a {
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
