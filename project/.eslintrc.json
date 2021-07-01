@@ -115,8 +115,7 @@
         "arrow-body-style": [0, "as-needed"],
         "no-underscore-dangle": [0],
         "no-shadow": [0],
-        "indent": ["error", "tab"],
-		"suppressImplicitAnyIndexErrors": true
+        "indent": ["error", "tab"]
       }
     },
     {
