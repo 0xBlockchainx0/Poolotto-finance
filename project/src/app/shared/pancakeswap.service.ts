@@ -15,15 +15,15 @@ export class PancakeSwapService {
 	}
 
 	get price(): number {
-		return this.coinData.market_data.current_price.usd;
+		return this.coinData?.market_data.current_price.usd;
 	}
 
 	get marketCap(): number {
-		return this.coinData.market_data.market_cap.usd;
+		return this.coinData?.market_data.market_cap.usd;
 	}
 
 	get totalVolume(): number {
-		return this.coinData.market_data.total_volume.usd;
+		return this.coinData?.market_data.total_volume.usd;
 	}
 
 }
