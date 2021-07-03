@@ -36,22 +36,22 @@
 	</p>
 
 	<div class="numbers-wrapper inner-wrapper">
-		<div class="numbers-block price">
+		<div class="numbers-block price" *ngIf="pancakeServie.price">
 			<p class="title">Price</p>
 			<div class="decor"></div>
-			<p class="digits">$0.578402435</p>
+			<p class="digits">${{pancakeServie.price}}</p>
 		</div>
 
-		<div class="numbers-block volume">
+		<div class="numbers-block volume" *ngIf="pancakeServie.totalVolume">
 			<p class="title">Volume</p>
 			<div class="decor"></div>
-			<p class="digits">$12.14K</p>
+			<p class="digits">${{pancakeServie.totalVolume}}</p>
 		</div>
 
-		<div class="numbers-block cap">
+		<div class="numbers-block cap" *ngIf="pancakeServie.marketCap">
 			<p class="title">FULLY DILUTED MARKET CAP</p>
 			<div class="decor"></div>
-			<p class="digits">$204,880,000</p>
+			<p class="digits">${{pancakeServie.marketCap}}</p>
 		</div>
 	</div>
 

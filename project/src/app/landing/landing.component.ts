@@ -9,7 +9,7 @@ import { PancakeSwapService } from '../shared/pancakeswap.service';
 
 export class LandingComponent implements OnInit {
 
-	constructor(private pancakeServie: PancakeSwapService) {}
+	constructor(public pancakeServie: PancakeSwapService) {}
 
 	ngOnInit(): void {
 		this.pancakeServie.getData();
