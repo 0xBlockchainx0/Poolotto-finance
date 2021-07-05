@@ -161,13 +161,8 @@
 }
 
 .second {
-	height: 1056px;
 	background-color: #f1f2f6;
 	padding: 40px 20px;
-
-	@media ($tablets) {
-		height: unset;
-	}
 
 	.text {
 		width: 325px;
@@ -219,6 +214,7 @@
 		background-color: #fff;
 		border-radius: 20px;
 		margin: 0 auto 20px;
+		text-decoration: none;
 
 		@media ($tablets) {
 			height: 204px;
@@ -232,7 +228,7 @@
 		}
 
 		&:last-child {
-			margin-top: 26px;
+			// margin-top: 26px;
 
 			@media ($large) {
 				margin-top: unset;
@@ -406,6 +402,7 @@
 	}
 
 	.swap-image {
+		display: block;
 		background: url("/assets/images/swap-image.png") no-repeat;
 		background-size: contain;
 		height: 394px;
@@ -425,6 +422,7 @@
 	}
 
 	.liq-image {
+		display: block;
 		background: url("/assets/images/liq-image.png") no-repeat;
 		background-size: contain;
 		height: 407px;

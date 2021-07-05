@@ -36,23 +36,33 @@
 	</p>
 
 	<div class="numbers-wrapper inner-wrapper">
-		<div class="numbers-block price" *ngIf="pancakeServie.price">
+		<a
+			class="numbers-block price"
+			href="https://pancakeswap.info/token/0x631c2f0edabac799f07550aee4ff0bf7fd35212b"
+			target="_blank"
+			rel="noreferrer">
+
 			<p class="title">Price</p>
 			<div class="decor"></div>
-			<p class="digits">${{pancakeServie.price}}</p>
-		</div>
+			<p class="digits">$1.00</p>
+		</a>
 
-		<div class="numbers-block volume" *ngIf="pancakeServie.totalVolume">
+		<a
+			class="numbers-block volume"
+			href="https://pancakeswap.info/pool/0x4786eeef4c750158a73218459bfc07a75c89edc0"
+			target="_blank"
+			rel="noreferrer">
+
 			<p class="title">Volume</p>
 			<div class="decor"></div>
-			<p class="digits">${{pancakeServie.totalVolume}}</p>
-		</div>
+			<p class="digits">$1k</p>
+		</a>
 
-		<div class="numbers-block cap" *ngIf="pancakeServie.marketCap">
+		<!-- <div class="numbers-block cap" *ngIf="pancakeServie.marketCap">
 			<p class="title">FULLY DILUTED MARKET CAP</p>
 			<div class="decor"></div>
 			<p class="digits">${{pancakeServie.marketCap}}</p>
-		</div>
+		</div> -->
 	</div>
 
 	<button class="btn btn-coming-soon">Coming soon</button>
@@ -83,8 +93,19 @@
 	<div class="decor"></div>
 
 	<div class="img-wrapper">
-		<div class="swap-image"></div>
-		<div class="liq-image"></div>
+		<a
+			class="swap-image"
+			href="https://exchange.pancakeswap.finance/#/swap?inputCurrency=0x631c2f0edabac799f07550aee4ff0bf7fd35212b&outputCurrency=0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+			target="_blank"
+			rel="noreferrer">
+		</a>
+
+		<a
+			class="liq-image"
+			href="https://exchange.pancakeswap.finance/#/add/BNB/0x631C2f0EdABaC799f07550aEE4fF0Bf7fd35212B"
+			target="_blank"
+			rel="noreferrer">
+		</a>
 	</div>
 </section>
 

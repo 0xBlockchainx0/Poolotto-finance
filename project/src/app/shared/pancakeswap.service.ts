@@ -9,9 +9,9 @@ export class PancakeSwapService {
 	constructor(private http: HttpClient) { }
 
 	getData(): any {
-		return this.http
-			.get(`${this.apiUrl}chainlink?tickers=false&market_data=true&community_data=false&developer_data=false&sparkline=false`)
-			.subscribe((data: any) => this.coinData = data);
+		// return this.http
+		// 	.get(`${this.apiUrl}chainlink?tickers=false&market_data=true&community_data=false&developer_data=false&sparkline=false`)
+		// 	.subscribe((data: any) => this.coinData = data);
 	}
 
 	get price(): number {
